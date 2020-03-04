@@ -2,9 +2,11 @@
 <html>
 <script>
     if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        console.log("Detected iOS device");
         window.location.href = 'https://www.youtube.com/';
     }
     else if ( /Android/i.test(navigator.userAgent) ) {
+        console.log("Detected Android device");
         window.location.href = 'https://www.netflix.com/browse/';
     }
     else {
