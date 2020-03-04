@@ -1,6 +1,18 @@
 <!doctype html>
 <html>
 <script>
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    //     // some code..
+    // }
+    if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+        window.location.href = 'https://www.youtube.com/';
+    }
+    else if ( /Android/i.test(navigator.userAgent) ) {
+        window.location.href = 'https://www.netflix.com/browse/';
+    }
+    else {
+        console.log("Unsupported platform");
+    }
     window.location.href = 'https://www.youtube.com/';
 </script>
   <head>
